@@ -1,0 +1,10 @@
+version: "2"
+services:
+  gundmanndk:
+    restart: "always"
+    build: .
+    ports:
+      - "8091:80"
+    container_name: bajardo-dk
+    environment:
+      TZ: "Europe/Amsterdam"
