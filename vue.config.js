@@ -2,7 +2,7 @@ const { defineConfig } = require("@vue/cli-service");
 const webpack = require("webpack");
 module.exports = defineConfig({
   transpileDependencies: true,
-  configureWebpack: {
+ configureWebpack: {
     plugins: [
       new webpack.ProvidePlugin({
         $: "jquery",
@@ -12,6 +12,7 @@ module.exports = defineConfig({
         bootstrap: "bootstrap",
       }),
     ],
+
     module: {
       rules: [
         {
@@ -20,5 +21,5 @@ module.exports = defineConfig({
         },
       ],
     },
-  },
+ },
 });

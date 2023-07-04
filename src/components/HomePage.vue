@@ -25,7 +25,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item item-bg active">
-          <img class="d-block w-100 h-100" :src="image1" alt="banner-photo" />
+          <img class="d-block w-100 h-100" :src="image3" alt="banner-photo" />
           <div class="carousel-caption banner-slider-inner d-flex h-100">
             <div class="banner-content container align-self-center text-center">
               <h1>Bajardo</h1>
@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="carousel-item item-bg">
-          <img class="d-block w-100 h-100" :src="image3" alt="banner-photo" />
+          <img class="d-block w-100 h-100" :src="image1" alt="banner-photo" />
           <div class="carousel-caption banner-slider-inner d-flex h-100">
             <div class="banner-content container align-self-center text-center">
               <h1>Bajardo</h1>
@@ -78,10 +78,12 @@
       </button>
     </div>
   </div>
+  <ArrigoLinks></ArrigoLinks> 
 </template>
 
-<script setup lan="ts">
-import image4 from "@/assets/img/banner/img-4.png";
+<script setup lang="ts">
 import image1 from "@/assets/img/banner/img-1.jpg";
 import image3 from "@/assets/img/banner/img-3.png";
+import image4 from "@/assets/img/banner/img-4.png";
+import ArrigoLinks from "./ArrigoLinks.vue";
 </script>

@@ -1,4 +1,4 @@
-import Vue from "vue";
+import { createApp } from 'vue';
 import App from "./App.vue";
 
 import "./assets/css/bootstrap.min.css";
@@ -20,7 +20,9 @@ import "././assets/css/skins/default.css";
 
 import $ from "jquery";
 import "jquery-mousewheel";
+// @ts-ignore
 window.jQuery = $;
+// @ts-ignore
 window.$ = $;
 
 import "./assets/js/bootstrap-submenu.js";
@@ -42,7 +44,7 @@ import "./assets/js/maps.js";
 import "./assets/js/sidebar.js";
 import "./assets/js/app.js";
 
-import WOW from "wow.js";
+import * as WOW from "wow.js";
 
 var wow = new WOW({
   animateClass: "animated",
@@ -51,6 +53,4 @@ var wow = new WOW({
 });
 wow.init();
 
-new Vue({
-  render: (h) => h(App),
-}).$mount("#app");
+createApp(App).mount('#app');
