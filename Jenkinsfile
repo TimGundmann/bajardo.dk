@@ -8,14 +8,13 @@ pipeline {
         stage('Prepare') {
             steps{
                 git 'https://github.com/TimGundmann/bajardo.dk.git'
-                sh 'npm -g ls && npm install'
+                sh 'npm uninstall -g sass && npm uninstall -g @vue/cli && npm install'
             }                
         }
 
         stage('Build') {
             steps{   
                 sh 'npm run build'
-            }
         }
         stage('Deploy') {
             steps{
