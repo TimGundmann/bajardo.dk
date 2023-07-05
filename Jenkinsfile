@@ -15,13 +15,13 @@ pipeline {
         stage('Build') {
             steps{   
                 sh 'npm run build'
+            }
         }
         stage('Deploy') {
             steps{
                 sh 'docker-compose stop'
                 sh 'docker-compose build'
                 sh 'docker-compose up -d'
-            }
             }
         }
     }
