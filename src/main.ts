@@ -18,12 +18,7 @@ import "./assets/css/slick.css";
 import "./assets/css/style.css";
 import "././assets/css/skins/default.css";
 
-import $ from "jquery";
 import "jquery-mousewheel";
-// @ts-ignore
-window.jQuery = $;
-// @ts-ignore
-window.$ = $;
 
 import "./assets/js/bootstrap-submenu.js";
 import "./assets/js/rangeslider.js";
