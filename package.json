@@ -2,7 +2,7 @@
   "name": "bajardo.dk",
   "version": "0.1.0",
   "private": true,
-  "scripts": { 
+  "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -20,6 +20,7 @@
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
     "@babel/preset-env": "^7.22.6",
+    "@nicolo-ribaudo/semver-v6": "^6.3.3",
     "@types/jquery": "^3.5.16",
     "@vue/cli-plugin-babel": "~5.0.8",
     "@vue/cli-plugin-eslint": "~5.0.8",
