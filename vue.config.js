@@ -1,8 +1,8 @@
-const { defineConfig } = require("@vue/cli-service");
 const webpack = require("webpack");
+const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
- configureWebpack: {
+  configureWebpack: {
     plugins: [
       new webpack.ProvidePlugin({
         $: "jquery",
