@@ -8,7 +8,7 @@ pipeline {
         stage('Prepare') {
             steps{
                 git 'https://github.com/TimGundmann/bajardo.dk.git'
-                sh 'npm -v && npm install'
+                sh 'npm -v && node -v npm install'
             }                
         }
 
