@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'node 16'
+        nodejs 'node 20'
     }
     stages {
         stage('Prepare') {
