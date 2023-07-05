@@ -22,13 +22,13 @@ pipeline {
                 sh 'docker-compose build'
                 sh 'docker-compose up -d'
             }
+            }
         }
     }
 
-  post {
-      failure {
+    post {
+        failure {
             step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: emailextrecipients([[$class: 'CulpritsRecipientProvider'], [$class: 'RequesterRecipientProvider']])])      
-        }
-  }    
-}
+            }
+    }    
 }
