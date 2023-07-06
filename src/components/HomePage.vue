@@ -24,8 +24,7 @@
         ></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item item-bg active">
-          <img class="d-block w-100 h-100" :src="image3" alt="banner-photo" />
+        <div class="carousel-item item-bg active" :style="{ backgroundImage: 'url(' + image3 + ')' }">
           <div class="carousel-caption banner-slider-inner d-flex h-100">
             <div class="banner-content container align-self-center text-center">
               <h1>Bajardo</h1>
@@ -35,8 +34,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item item-bg">
-          <img class="d-block w-100 h-100" :src="image4" alt="banner-photo" />
+        <div class="carousel-item item-bg" :style="{ backgroundImage: 'url(' + image4 + ')' }">
           <div class="carousel-caption banner-slider-inner d-flex h-100">
             <div class="banner-content container align-self-center text-center">
               <h1>Bajardo</h1>
@@ -46,8 +44,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item item-bg">
-          <img class="d-block w-100 h-100" :src="image1" alt="banner-photo" />
+        <div class="carousel-item item-bg" :style="{ backgroundImage: 'url(' + image1 + ')' }">
           <div class="carousel-caption banner-slider-inner d-flex h-100">
             <div class="banner-content container align-self-center text-center">
               <h1>Bajardo</h1>
@@ -87,3 +84,22 @@ import image3 from "@/assets/img/banner/img-3.png";
 import image4 from "@/assets/img/banner/img-4.png";
 import ArrigoLinks from "./ArrigoLinks.vue";
 </script>
+<style>
+.carousel-item {
+  height: 100vh;
+  min-height: 350px; /* you can adjust this minimum height as needed */
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100vh;
+}
+</style>
