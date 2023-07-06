@@ -28,7 +28,7 @@
           <div class="carousel-caption banner-slider-inner d-flex h-100">
             <div class="banner-content container align-self-center text-center">
               <h1 class="carousel__headline">Bajardo</h1>
-              <p>Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
+              <p class="carousel__text">Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
               <a class="btn-2 btn-defaults" href="#"> <span>Get Started Now</span> <i class="arrow"></i> </a>
               <a class="btn-1 btn-outline-1" href="#"> <span>Learn More</span> <i class="arrow"></i> </a>
             </div>
@@ -37,8 +37,8 @@
         <div class="carousel-item item-bg" :style="{ backgroundImage: 'url(' + image4 + ')' }">
           <div class="carousel-caption banner-slider-inner d-flex h-100">
             <div class="banner-content container align-self-center text-center">
-              <h1 class="carousel__headline">Bajardo</h1>
-              <p>Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
+              <h1 class="carousel__headline">Ferielejligheder</h1>
+              <p class="carousel__text">Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
               <a class="btn-2 btn-defaults" href="#"> <span>Get Started Now</span> <i class="arrow"></i> </a>
               <a class="btn-1 btn-outline-1" href="#"> <span>Learn More</span> <i class="arrow"></i> </a>
             </div>
@@ -47,8 +47,8 @@
         <div class="carousel-item item-bg" :style="{ backgroundImage: 'url(' + image1 + ')' }">
           <div class="carousel-caption banner-slider-inner d-flex h-100">
             <div class="banner-content container align-self-center text-center">
-              <h1 class="carousel__headline">Bajardo</h1>
-              <p>Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
+              <h1 class="carousel__headline">Seværdigheder</h1>
+              <p class="carousel__text">Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
               <a class="btn-2 btn-defaults" href="#"> <span>Get Started Now</span> <i class="arrow"></i> </a>
               <a class="btn-1 btn-outline-1" href="#"> <span>Learn More</span> <i class="arrow"></i> </a>
             </div>
@@ -107,5 +107,10 @@ import ArrigoLinks from "./ArrigoLinks.vue";
   text-shadow: -1px -1px 0 #95c41f, 1px -1px 0 #95c41f, -1px 1px 0 #95c41f, 1px 1px 0 #95c41f;
   color: white !important;
   font-weight: 700;
+}
+.carousel__text {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: white !important;
+  font-size: 1.25rem;
 }
 </style>
