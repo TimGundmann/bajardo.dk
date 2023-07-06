@@ -27,7 +27,7 @@
         <div class="carousel-item item-bg active" :style="{ backgroundImage: 'url(' + image3 + ')' }">
           <div class="carousel-caption banner-slider-inner d-flex h-100">
             <div class="banner-content container align-self-center text-center">
-              <h1>Bajardo</h1>
+              <h1 class="carousel__headline">Bajardo</h1>
               <p>Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
               <a class="btn-2 btn-defaults" href="#"> <span>Get Started Now</span> <i class="arrow"></i> </a>
               <a class="btn-1 btn-outline-1" href="#"> <span>Learn More</span> <i class="arrow"></i> </a>
@@ -37,7 +37,7 @@
         <div class="carousel-item item-bg" :style="{ backgroundImage: 'url(' + image4 + ')' }">
           <div class="carousel-caption banner-slider-inner d-flex h-100">
             <div class="banner-content container align-self-center text-center">
-              <h1>Bajardo</h1>
+              <h1 class="carousel__headline">Bajardo</h1>
               <p>Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
               <a class="btn-2 btn-defaults" href="#"> <span>Get Started Now</span> <i class="arrow"></i> </a>
               <a class="btn-1 btn-outline-1" href="#"> <span>Learn More</span> <i class="arrow"></i> </a>
@@ -47,7 +47,7 @@
         <div class="carousel-item item-bg" :style="{ backgroundImage: 'url(' + image1 + ')' }">
           <div class="carousel-caption banner-slider-inner d-flex h-100">
             <div class="banner-content container align-self-center text-center">
-              <h1>Bajardo</h1>
+              <h1 class="carousel__headline">Bajardo</h1>
               <p>Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
               <a class="btn-2 btn-defaults" href="#"> <span>Get Started Now</span> <i class="arrow"></i> </a>
               <a class="btn-1 btn-outline-1" href="#"> <span>Learn More</span> <i class="arrow"></i> </a>
@@ -101,5 +101,11 @@ import ArrigoLinks from "./ArrigoLinks.vue";
   left: 0;
   min-width: 100%;
   height: 100vh;
+}
+
+.carousel__headline {
+  text-shadow: -1px -1px 0 #95c41f, 1px -1px 0 #95c41f, -1px 1px 0 #95c41f, 1px 1px 0 #95c41f;
+  color: white !important;
+  font-weight: 700;
 }
 </style>
