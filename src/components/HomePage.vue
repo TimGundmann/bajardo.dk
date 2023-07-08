@@ -18,42 +18,15 @@
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carouselExampleCations"
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item item-bg active" :style="{ backgroundImage: 'url(' + image3 + ')' }">
-          <div class="carousel-caption banner-slider-inner d-flex h-100">
-            <div class="banner-content container align-self-center text-center">
-              <h1 class="carousel__headline">Bajardo</h1>
-              <p class="carousel__text">Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
-              <a class="btn-2 btn-defaults" href="#"> <span>Get Started Now</span> <i class="arrow"></i> </a>
-              <a class="btn-1 btn-outline-1" href="#"> <span>Learn More</span> <i class="arrow"></i> </a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item item-bg" :style="{ backgroundImage: 'url(' + image4 + ')' }">
-          <div class="carousel-caption banner-slider-inner d-flex h-100">
-            <div class="banner-content container align-self-center text-center">
-              <h1 class="carousel__headline">Ferielejligheder</h1>
-              <p class="carousel__text">Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
-              <a class="btn-2 btn-defaults" href="#"> <span>Get Started Now</span> <i class="arrow"></i> </a>
-              <a class="btn-1 btn-outline-1" href="#"> <span>Learn More</span> <i class="arrow"></i> </a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item item-bg" :style="{ backgroundImage: 'url(' + image1 + ')' }">
-          <div class="carousel-caption banner-slider-inner d-flex h-100">
-            <div class="banner-content container align-self-center text-center">
-              <h1 class="carousel__headline">Seværdigheder</h1>
-              <p class="carousel__text">Allow us to guide you through the innovative stress free approach in finding your dream Properties.</p>
-              <a class="btn-2 btn-defaults" href="#"> <span>Get Started Now</span> <i class="arrow"></i> </a>
-              <a class="btn-1 btn-outline-1" href="#"> <span>Learn More</span> <i class="arrow"></i> </a>
-            </div>
-          </div>
-        </div>
+        <BannerLinks :active="true" :image="image3" headLine="Bajardo" description="Nyd roen og den fantastiske udsigt i en lille bjergby tæt på Sanremo og Nice"/> 
+        <BannerLinks :image="image4" headLine="Ferielejligheder" description="Du har mulighed for at leje lejligheder i forskellig størrelse og med forskelligt særpræg"/> 
+        <BannerLinks :image="image1" headLine="Seværdigheder" description="Natur, italiensk mad og strandliv. Her er alt, hvad du har brug for på din ferie"/> 
       </div>
       <button
         class="carousel-control-prev"
@@ -83,34 +56,5 @@ import image1 from "@/assets/img/banner/img-1.jpg";
 import image3 from "@/assets/img/banner/img-3.png";
 import image4 from "@/assets/img/banner/img-4.png";
 import ArrigoLinks from "./ArrigoLinks.vue";
+import BannerLinks from "./BannerLinks.vue";
 </script>
-<style>
-.carousel-item {
-  height: 100vh;
-  min-height: 350px; /* you can adjust this minimum height as needed */
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.carousel-item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 100vh;
-}
-
-.carousel__headline {
-  text-shadow: -1px -1px 0 #95c41f, 1px -1px 0 #95c41f, -1px 1px 0 #95c41f, 1px 1px 0 #95c41f;
-  color: white !important;
-  font-weight: 700;
-}
-.carousel__text {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  color: white !important;
-  font-size: 1.25rem;
-}
-</style>
