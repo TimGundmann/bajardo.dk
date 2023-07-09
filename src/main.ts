@@ -1,5 +1,6 @@
 import { createApp } from 'vue';
 import App from "./App.vue";
+import { createI18n } from 'vue-i18n'
 
 import "./assets/css/bootstrap.min.css";
 import "./assets/css/animate.min.css";
@@ -48,4 +49,18 @@ var wow = new WOW({
 });
 wow.init();
 
-createApp(App).mount('#app');
+import da from './translations/dk.json'
+import en from './translations/en.json'
+import it from './translations/it.json'
+import router from './Route';
+
+
+const i18n = createI18n({
+  locale: 'da', // set locale
+  fallbackLocale: 'en', // set fallback locale
+  messages: {
+    da, en, it
+  }
+});
+
+createApp(App).use(router).use(i18n).mount('#app');
