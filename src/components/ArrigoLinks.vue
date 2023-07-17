@@ -1,10 +1,10 @@
 <template>
-    <div class="content-area featured-properties">
+    <div id="arrigoLinks" class="content-area featured-properties">
     <div class="container">
         <!-- Main title -->
         <div class="main-title-2">
-            <h1>Featured <span>Properties</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            <h1>{{$t('ferielejligheder.firstHeadLine')}}<span>{{$t('ferielejligheder.secondHeadline')}}</span></h1>
+            <p>{{$t('ferielejligheder.subText')}}</p>
             <div class="title-border">
                 <div class="title-border-inner"></div>
                 <div class="title-border-inner"></div>

@@ -4,19 +4,32 @@
         <div class="banner-content container align-self-center text-center">
             <h1 class="carousel__headline">{{ headLine }}</h1>
             <p class="carousel__text">{{ description }}</p>
-            <a class="btn-2 btn-defaults" href="#"> <span>Get Started Now</span> <i class="arrow"></i> </a>
-            <a class="btn-1 btn-outline-1" href="#"> <span class="carousel__text--black-outline">Learn More</span> <i class="arrow"></i> </a>
+            <a class="btn-2 btn-defaults" :href="`#${link}`"> 
+              <span>{{ linkText }}</span> 
+              <i class="arrow"></i> 
+            </a>
         </div>
     </div>
 </div>
 </template>
 <script setup lang="ts">
+import { watch } from 'vue';
 
-defineProps({
+
+const props = defineProps({
     image: String,
     headLine: String,
     description: String,
+    linkText: String,
+    link: String,
     active: Boolean
+});
+
+watch(() => props.image, () => {
+  if (props.image) {
+    const image = new Image();
+    image.src = props.image;
+  }
 });
 
 </script>
@@ -39,8 +52,8 @@ defineProps({
   height: 100vh;
 }
 
-.carousel__text--black-outline {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+.carousel__text--black-outline:hover::before {
+  text-shadow: 0;
 }  
 
 .carousel__headline {

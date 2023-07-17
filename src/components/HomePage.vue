@@ -24,9 +24,23 @@
         ></button>
       </div>
       <div class="carousel-inner">
-        <BannerLinks :active="true" :image="image3" :headLine="$t('bajardo')" description="Nyd roen og den fantastiske udsigt i en lille bjergby tæt på Sanremo og Nice"/> 
-        <BannerLinks :image="image4" :headLine="$t('ferielejligheder')" description="Du har mulighed for at leje lejligheder i forskellig størrelse og med forskelligt særpræg"/> 
-        <BannerLinks :image="image1" headLine="Seværdigheder" description="Natur, italiensk mad og strandliv. Her er alt, hvad du har brug for på din ferie"/> 
+        <BannerLinks 
+          :image="image3" 
+          :headLine="$t('bajardo.headLine')"
+          :description="$t('bajardo.description')" 
+          :linkText="$t('bajardo.linkText')" 
+          :active="true" /> 
+        <BannerLinks 
+          :image="image4" 
+          :headLine="$t('ferielejligheder.headLine')" 
+          :description="$t('ferielejligheder.description')" 
+          :linkText="$t('ferielejligheder.linkText')"
+          link="arrigoLinks"/> 
+        <BannerLinks 
+          :image="image1" 
+          :headLine="$t('seværdigheder.headLine')" 
+          :description="$t('seværdigheder.description')" 
+          :linkText="$t('seværdigheder.linkText')"/> 
       </div>
       <button
         class="carousel-control-prev"
