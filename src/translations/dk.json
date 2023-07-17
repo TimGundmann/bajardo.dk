@@ -16,5 +16,9 @@
         "headLine": "Seværdigheder",
         "description": "Natur, italiensk mad og strandliv. Her er alt, hvad du har brug for på din ferie", 
         "linkText": "Læs mere"
+    },
+    "arrigo": {
+        "readMore": "Læs mere",
+        "forRent": "Til leje"
     }
 }

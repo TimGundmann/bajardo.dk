@@ -18,115 +18,50 @@
         <div class="row wow fadeInUp delay-04s">
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <div class="property-3">
-                    <img src="img/properties/properties-13.png" alt="photo" class="img-fluid w-100">
+                    <img src="https://bodynsoul.it/wp-content/uploads/2020/02/2A-LOVERSNEST-BEDROOM.jpg" alt="photo" class="img-fluid w-100">
                     <div class="featured-tag2">Featured</div>
-                    <div class="sale-tag">For Sale</div>
+                    <div class="sale-tag">{{ $t('arrigo.forRent')}}</div>
                     <div class="ling-section">
                         <h3>
-                            <a href="properties-details.html">Beautful Single Home</a>
+                            <a href="https://bodynsoul.it/rooms/room-one/">Lovers’ Nest</a>
                         </h3>
                         <ul class="facilities-list">
-                            <li>4 Beds</li>
-                            <li>4 Baths</li>
-                            <li>920 SQ FT</li>
-                            <li>1 Garage</li>
+                            <li>2 voksne</li>
                         </ul>
-                        <a href="properties-details.html" class="read-more-btn">Read More</a>
+                        <a href="https://bodynsoul.it/rooms/room-one/" class="read-more-btn">{{ $t('arrigo.readMore')}}</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <div class="property-3">
-                    <img src="img/properties/properties-14.png" alt="photo" class="img-fluid w-100">
+                    <img src="https://bodynsoul.it/wp-content/uploads/2020/02/THESTABLE.jpg" alt="photo" class="img-fluid w-100">
                     <div class="featured-tag2">Featured</div>
-                    <div class="sale-tag">For Rent</div>
+                    <div class="sale-tag">{{ $t('arrigo.forRent')}}</div>
                     <div class="ling-section">
                         <h3>
-                            <a href="properties-details.html">Modern Family Home</a>
+                            <a href="https://bodynsoul.it/rooms/room-two/">The Stable</a>
                         </h3>
                         <ul class="facilities-list">
-                            <li>4 Beds</li>
-                            <li>4 Baths</li>
-                            <li>920 SQ FT</li>
-                            <li>1 Garage</li>
+                            <li>2 voksne</li>
+                            <li>2 børn</li>
                         </ul>
-                        <a href="properties-details.html" class="read-more-btn">Read More</a>
+                        <a href="https://bodynsoul.it/rooms/room-two/" class="read-more-btn">{{ $t('arrigo.readMore')}}</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <div class="property-3">
-                    <img src="img/properties/properties-15.png" alt="photo" class="img-fluid w-100">
+                    <img src="https://bodynsoul.it/wp-content/uploads/2020/02/SWALLOWS-NEST-DINING-ROOM.jpg" alt="photo" class="img-fluid w-100">
                     <div class="featured-tag2">Featured</div>
-                    <div class="sale-tag">For Sale</div>
+                    <div class="sale-tag">{{ $t('arrigo.forRent')}}</div>
                     <div class="ling-section">
                         <h3>
-                            <a href="properties-details.html">Sweet Family Home</a>
+                            <a href="https://bodynsoul.it/rooms/room-three/">Swallows' Nest</a>
                         </h3>
                         <ul class="facilities-list">
-                            <li>4 Beds</li>
-                            <li>4 Baths</li>
-                            <li>920 SQ FT</li>
-                            <li>1 Garage</li>
+                            <li>4 gæster</li>
                         </ul>
-                        <a href="properties-details.html" class="read-more-btn">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="property-3">
-                    <img src="img/properties/properties-16.png" alt="photo" class="img-fluid w-100">
-                    <div class="featured-tag2">Featured</div>
-                    <div class="sale-tag">For Rent</div>
-                    <div class="ling-section">
-                        <h3>
-                            <a href="properties-details.html">Park Avenue</a>
-                        </h3>
-                        <ul class="facilities-list">
-                            <li>4 Beds</li>
-                            <li>4 Baths</li>
-                            <li>920 SQ FT</li>
-                            <li>1 Garage</li>
-                        </ul>
-                        <a href="properties-details.html" class="read-more-btn">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="property-3">
-                    <img src="img/properties/properties-17.png" alt="photo" class="img-fluid w-100">
-                    <div class="featured-tag2">Featured</div>
-                    <div class="sale-tag">For Sale</div>
-                    <div class="ling-section">
-                        <h3>
-                            <a href="properties-details.html">Big Head House</a>
-                        </h3>
-                        <ul class="facilities-list">
-                            <li>4 Beds</li>
-                            <li>4 Baths</li>
-                            <li>920 SQ FT</li>
-                            <li>1 Garage</li>
-                        </ul>
-                        <a href="properties-details.html" class="read-more-btn">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="property-3">
-                    <img src="img/properties/properties-18.png" alt="photo" class="img-fluid w-100">
-                    <div class="featured-tag2">Featured</div>
-                    <div class="sale-tag">For Rent</div>
-                    <div class="ling-section">
-                        <h3>
-                            <a href="properties-details.html">Masons Villas</a>
-                        </h3>
-                        <ul class="facilities-list">
-                            <li>4 Beds</li>
-                            <li>4 Baths</li>
-                            <li>920 SQ FT</li>
-                            <li>1 Garage</li>
-                        </ul>
-                        <a href="properties-details.html" class="read-more-btn">Read More</a>
+                        <a href="https://bodynsoul.it/rooms/room-three/" class="read-more-btn">{{ $t('arrigo.readMore')}}</a>
                     </div>
                 </div>
             </div>
