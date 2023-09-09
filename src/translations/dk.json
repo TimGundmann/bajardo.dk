@@ -1,24 +1,30 @@
 {
-    "bajardo": {
-        "headLine": "Bajardo",
-        "description": "Nyd roen og den fantastiske udsigt i en lille bjergby tæt på Sanremo og Nice", 
-        "linkText": "Læs mere"
-    },
-    "ferielejligheder": {
-        "headLine": "Ferielejligheder",
-        "firstHeadLine": "Ferie",
-        "secondHeadline": "lejligheder",
-        "description": "Du har mulighed for at leje lejligheder i forskellig størrelse og med forskelligt særpræg", 
-        "linkText": "Book nu",
-        "subText": "De forskellige lejligheder"
-    },
-    "seværdigheder": {
-        "headLine": "Seværdigheder",
-        "description": "Natur, italiensk mad og strandliv. Her er alt, hvad du har brug for på din ferie", 
-        "linkText": "Læs mere"
-    },
-    "arrigo": {
-        "readMore": "Læs mere",
-        "forRent": "Til leje"
-    }
+  "bajardo": {
+    "headLine": "Bajardo",
+    "description": "Nyd roen og den fantastiske udsigt i en lille bjergby tæt på Sanremo og Nice",
+    "linkText": "Læs mere",
+    "firstHeadLine": "Bajardo",
+    "secondHeadline": "By",
+    "subText": "Den lille by på toppen"
+  },
+  "ferielejligheder": {
+    "headLine": "Ferielejligheder",
+    "description": "Du har mulighed for at leje lejligheder i forskellig størrelse og med forskelligt særpræg",
+    "linkText": "Book nu",
+    "firstHeadLine": "Ferie",
+    "secondHeadline": "lejligheder",
+    "subText": "De forskellige lejligheder"
+  },
+  "seværdigheder": {
+    "headLine": "Seværdigheder",
+    "description": "Natur, italiensk mad og strandliv. Her er alt, hvad du har brug for på din ferie",
+    "linkText": "Læs mere",
+    "firstHeadLine": "Seværdig",
+    "secondHeadline": "hedder",
+    "subText": "Det skønne område"
+  },
+  "arrigo": {
+    "readMore": "Læs mere",
+    "forRent": "Til leje"
+  }
 }

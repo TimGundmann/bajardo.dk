@@ -1,22 +1,11 @@
 <template>
   <div id="arrigoLinks" class="content-area featured-properties">
     <div class="container">
-      <!-- Main title -->
-      <div class="main-title-2">
-        <h1>
-          {{ $t("ferielejligheder.firstHeadLine") }}<span>{{ $t("ferielejligheder.secondHeadline") }}</span>
-        </h1>
-        <p>{{ $t("ferielejligheder.subText") }}</p>
-        <div class="title-border">
-          <div class="title-border-inner"></div>
-          <div class="title-border-inner"></div>
-          <div class="title-border-inner"></div>
-          <div class="title-border-inner"></div>
-          <div class="title-border-inner"></div>
-          <div class="title-border-inner"></div>
-          <div class="title-border-inner"></div>
-        </div>
-      </div>
+      <TitleComponent
+        :first-header="$t('ferielejligheder.firstHeadLine')"
+        :second-header="$t('ferielejligheder.secondHeadline')"
+        :sub-header="$t('ferielejligheder.subText')"
+      />
       <div class="row wow fadeInUp delay-04s">
         <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
           <div class="property-3">
@@ -104,4 +93,6 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TitleComponent from "./TitleComponent.vue";
+</script>

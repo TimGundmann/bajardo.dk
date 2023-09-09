@@ -24,23 +24,28 @@
         ></button>
       </div>
       <div class="carousel-inner">
-        <BannerLinks 
-          :image="image3" 
+        <BannerLinks
+          :image="image3"
           :headLine="$t('bajardo.headLine')"
-          :description="$t('bajardo.description')" 
-          :linkText="$t('bajardo.linkText')" 
-          :active="true" /> 
-        <BannerLinks 
-          :image="image4" 
-          :headLine="$t('ferielejligheder.headLine')" 
-          :description="$t('ferielejligheder.description')" 
+          :description="$t('bajardo.description')"
+          :linkText="$t('bajardo.linkText')"
+          :active="true"
+          link="bajardoLinks"
+        />
+        <BannerLinks
+          :image="image4"
+          :headLine="$t('ferielejligheder.headLine')"
+          :description="$t('ferielejligheder.description')"
           :linkText="$t('ferielejligheder.linkText')"
-          link="arrigoLinks"/> 
-        <BannerLinks 
-          :image="image1" 
-          :headLine="$t('seværdigheder.headLine')" 
-          :description="$t('seværdigheder.description')" 
-          :linkText="$t('seværdigheder.linkText')"/> 
+          link="arrigoLinks"
+        />
+        <BannerLinks
+          :image="image1"
+          :headLine="$t('seværdigheder.headLine')"
+          :description="$t('seværdigheder.description')"
+          :linkText="$t('seværdigheder.linkText')"
+          link="attractionsLinks"
+        />
       </div>
       <button
         class="carousel-control-prev"
@@ -62,7 +67,9 @@
       </button>
     </div>
   </div>
-  <ArrigoLinks></ArrigoLinks> 
+  <ArrigoLinks></ArrigoLinks>
+  <BajardoLinks></BajardoLinks>
+  <AttractionsLinks></AttractionsLinks>
 </template>
 
 <script setup lang="ts">
@@ -71,4 +78,6 @@ import image3 from "@/assets/img/banner/img-3.png";
 import image4 from "@/assets/img/banner/img-4.png";
 import ArrigoLinks from "./ArrigoLinks.vue";
 import BannerLinks from "./BannerLinks.vue";
+import BajardoLinks from "./BajardoLinks.vue";
+import AttractionsLinks from "./AttractionsLinks.vue";
 </script>
